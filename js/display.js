@@ -58,6 +58,7 @@ function init() {
     // Create a dom element for each new stanza
     var uniqueStanza = document.createElement("div");
     uniqueStanza.className = "eight columns";
+    uniqueStanza.id = "poem-space";
     
     // console.log("Where?");
     for (var j = 0; j < stanza.length; j += 1) {
@@ -66,8 +67,7 @@ function init() {
       let newLine = document.createTextNode(line);
       
       poemSpace.appendChild(newLine);
-      poemSpace.className = "";
-      poemSpace.id = "";
+      poemSpace.className = "poem-line";
       
       uniqueStanza.appendChild(poemSpace);
     }

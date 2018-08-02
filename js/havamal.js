@@ -892,5 +892,5 @@ let havamalChapters = [
   "The Song of Spells" // (verses 145-164)
 ]
 
-console.log("PRAISE ODIN! <= Havamal Loaded");
-console.log(`${havamal[havamal.length -  1][3]}`);
+// console.log("PRAISE ODIN! <= Havamal Loaded");
+// console.log(`${havamal[havamal.length -  1][3]}`);

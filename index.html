@@ -1,55 +1,22 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <script src="havamal.js"></script>
-  <script>
-    window.onload = init;
+  <title>Havamal - The Words of Odin the High One</title>
+  <meta name="description" content="The Havamal - The Words of Odin the High One generated with JavaScript">
+  <meta name="author" content="Ian Robinson (ianrobinson.net)">
+  <meta charset="utf-8">
+  
+  <!-- Skeleton Framework (getskeleton.com) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-    function init() {
-      var havamalDocument = document.getElementById("havamal-here");
-
-      for (var i = 0; i < havamal.length; i += 1) {
-        var stanza = havamal[i];
-
-        // Add Specific in Chapter Titles 
-        if (i == 0) {
-          chapterGen(0);
-        } else if (i == 79) {
-           chapterGen(1);
-        } else if (i == 88) {
-          chapterGen(2);
-        } else if (i == 93) {
-          chapterGen(i);
-        } else if (i == 100) {
-          chapterGen(3);
-        } else if (i == 108) {
-          chapterGen(4);
-        } else if (i == 136) {
-          chapterGen(5);
-        } else if (i == 144) {
-          chapterGen(6);
-        } else if (i == 160) {
-          chapterGen(7);
-        }
-
-        function chapterGen(num) {
-          havamalDocument.innerHTML += "<h2 class='chapter-title'>" + havamalChapters[num] + "</h2>";
-        }
-
-        // Don't add a number to chapter 165 because it doesn't exist
-        if (i !== havamal.length) {
-          var stanzaNum = i + 1;
-          havamalDocument.innerHTML += "<h3 class='stanza-num'>" + stanzaNum +"</h3>";
-        }
-
-        for (var j = 0; j < stanza.length; j += 1) {
-          var line = stanza[j];
-          havamalDocument.innerHTML += "<p class='havamal-line'>" + line + "</p>\n";
-        }
-      }
-    }
-  </script>
+  <!-- Custom JavaScript -->
+  <script src="js/havamal.js"></script>
+  <script src="js/display.js"></script>
   <style>
     body {
       font-family: sans-serif;
@@ -58,7 +25,14 @@
 </head>
 
 <body>
-  <h1>Havamal</h1>
-  <div id="havamal-here"></div>
+  <div class="container">
+    <div class="row">
+      <div class="oh-the-top">
+        <h1>Havamal</h1>
+        <p>The Words of Odin the High One</p>
+      </div>
+    </div>
+    <div id="havamal-here"></div>
+  </div>
 </body>
 </html>
