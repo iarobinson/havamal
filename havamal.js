@@ -881,4 +881,5 @@ var havamal = [
   ]
 ];
 
-console.log(havamal[0]);
+console.log("PRAISE ODIN! <= Havamal Loaded");
+console.log(`${havamal[havamal.length -  1][3]}`);
