@@ -7,24 +7,54 @@
     window.onload = init;
 
     function init() {
-      var contentSection = document.getElementById("havamal-here");
+      var havamalDocument = document.getElementById("havamal-here");
 
       for (var i = 0; i < havamal.length; i += 1) {
         var stanza = havamal[i];
 
-        if (i !== havamal.length - 1) {
+        // Add Specific in Chapter Titles 
+        if (i == 0) {
+          chapterGen(0);
+        } else if (i == 79) {
+           chapterGen(1);
+        } else if (i == 88) {
+          chapterGen(2);
+        } else if (i == 93) {
+          chapterGen(i);
+        } else if (i == 100) {
+          chapterGen(3);
+        } else if (i == 108) {
+          chapterGen(4);
+        } else if (i == 136) {
+          chapterGen(5);
+        } else if (i == 144) {
+          chapterGen(6);
+        } else if (i == 160) {
+          chapterGen(7);
+        }
+
+        function chapterGen(num) {
+          havamalDocument.innerHTML += "<h2 class='chapter-title'>" + havamalChapters[num] + "</h2>";
+        }
+
+        // Don't add a number to chapter 165 because it doesn't exist
+        if (i !== havamal.length) {
           var stanzaNum = i + 1;
-          contentSection.innerHTML += "<h2>" + stanzaNum +"</h2>";
+          havamalDocument.innerHTML += "<h3 class='stanza-num'>" + stanzaNum +"</h3>";
         }
 
         for (var j = 0; j < stanza.length; j += 1) {
           var line = stanza[j];
-          
-          contentSection.innerHTML += "<p>" + line + "</p>\n";
+          havamalDocument.innerHTML += "<p class='havamal-line'>" + line + "</p>\n";
         }
       }
     }
   </script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
 </head>
 
 <body>

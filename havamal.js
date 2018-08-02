@@ -881,5 +881,16 @@ var havamal = [
   ]
 ];
 
+let havamalChapters = [
+  "Wisdom for Wanderers and Counsel to Guests", // (verses 1-79)
+  "Maxims for All Men", // (verses 80-88)
+  "Lessons for Lovers", // (verses 89-93)
+  "Odin's Love Quests", // (verses 94-100)
+  "Odin's Quest after the Song Mead", // (verses 101-108)
+  "The Counseling of the Stray-Singer", // (verses 109-136)
+  "Odin's Quest after the Runes", // (verses 137-144)
+  "The Song of Spells" // (verses 145-164)
+]
+
 console.log("PRAISE ODIN! <= Havamal Loaded");
 console.log(`${havamal[havamal.length -  1][3]}`);
