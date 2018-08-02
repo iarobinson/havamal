@@ -2,8 +2,21 @@
   margin: 5% 5% 5% 5%;
 }
 
+.row {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.poem-line {
+  font-size: 2rem;
+}
+
 #stanza-num {
   font-size: 10.0rem;
   line-height: 1.2;
   letter-spacing: -.1rem;
+}
+
+#stanza-num {
+  text-align: center;
 }
