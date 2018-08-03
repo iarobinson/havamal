@@ -2,6 +2,15 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  color: grey;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #CC0000;
+}
+
 .oh-the-top {
   margin: 5% 5% 5% 5%;
 }
