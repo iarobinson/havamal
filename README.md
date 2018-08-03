@@ -2,6 +2,8 @@
 
 ...in JavaScript.
 
+[Read the Words of Odin](https://iarobinson.github.io/havamal/)
+
 ## Source
 
 From [Elder or Poetic Edda](https://en.wikipedia.org/wiki/Poetic_Edda) (Sæmund's Edda)
